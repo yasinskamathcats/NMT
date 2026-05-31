@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симуляція НМТ з Математики</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="glass-card active">
+            <h1>Симуляція НМТ 🚀</h1>
+            <p>Готовий перевірити свої сили з математики? Введи свій нікнейм в Instagram, щоб ми знали героя в обличчя!</p>
+            <input type="text" id="student-name" placeholder="@tvoy_instagram" autocomplete="off">
+            <button id="start-btn" class="primary-btn">Почати тест</button>
+        </div>
+
+        <!-- Test Screen -->
+        <div id="test-screen" class="glass-card hidden">
+            <div class="test-header">
+                <h2>Математика. Тема 1</h2>
+                <div class="timer" id="timer">00:00</div>
+            </div>
+            <div id="questions-container"></div>
+            <button id="finish-btn" class="primary-btn finish-btn">Завершити тестування</button>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="glass-card hidden">
+            <div class="loader"></div>
+            <p>Перевіряємо твої відповіді та зберігаємо результати...</p>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="glass-card hidden">
+            <h1>Твій результат: <span id="score-display" class="highlight">0/0</span></h1>
+            <p class="motivational-text">Що твій бал говорить про тебе? Завтра розберемо це в новому пості, не пропусти! 🐱</p>
+            <div id="review-container"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
