@@ -1,5 +1,5 @@
 // ЗМІНИ ЦЕ ПОСИЛАННЯ НА СВОЄ ПІСЛЯ НАЛАШТУВАННЯ GOOGLE APPS SCRIPT
-const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzef7dDs_Zlgqp80nky3hx7xrIGleFkus1euvCN5Hzg-pPuQtlX-8eh3YBuFw5Oa0vi/exec';
 
 let questions = [];
 let userAnswers = {};
