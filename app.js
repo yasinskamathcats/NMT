@@ -79,6 +79,17 @@ function renderQuestions() {
         block.innerHTML = html;
         container.appendChild(block);
     });
+    
+    // Рендеринг формул
+    if (window.renderMathInElement) {
+        renderMathInElement(container, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });
+    }
 }
 
 window.selectOption = function(qId, key) {
@@ -185,6 +196,17 @@ function showResult(score) {
         block.innerHTML = html;
         reviewContainer.appendChild(block);
     });
+    
+    // Рендеринг формул
+    if (window.renderMathInElement) {
+        renderMathInElement(reviewContainer, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });
+    }
 }
 
 window.toggleExp = function(qId) {
